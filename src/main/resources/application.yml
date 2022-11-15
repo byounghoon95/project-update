@@ -1,0 +1,18 @@
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/cheesemarket?serverTimezone=Asia/Seoul
+    username: cheesemarket
+    password: cheese
+
+  jpa:
+    hibernate:
+      ddl-auto: none # create
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true

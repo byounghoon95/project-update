@@ -1,0 +1,38 @@
+ .reserDetail_title{
+ 	margin : 3% 0 0 0;
+ 	color :#ffc107;
+ }
+ 
+ 
+ 
+  .reser_content{
+  	margin : 0 0 15px 280px;
+  	font-size: 21px;
+  	display: flex;
+    paddin : auto;
+    text-align: center;
+  }
+  
+  
+ 
+ 
+ #map {
+	border: 2px solid gold;
+	
+ }
+ 
+ #compl_button{
+ 	margin-right: 100px;
+ 	background-color:pink;
+ 	border-radius: 6px;	
+ 	border:none;
+ 	color:gray;
+ 	float: right;
+ 	font-size: 15px;
+ 	padding: 5px;
+ }
+ .reserDetail_button {
+ 	margin-top : 15px;
+ 	margin-bottom : 2%;
+ }
+ 

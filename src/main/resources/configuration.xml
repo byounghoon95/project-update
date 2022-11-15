@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+   <typeAliases>
+      <typeAlias alias="Board"       type="com.example.projectupdate.entity.Board"/>
+      <typeAlias alias="Member"       type="com.example.projectupdate.entity.Member"/>
+      <typeAlias alias="Item"       type="com.example.projectupdate.entity.Item"/>
+      <typeAlias alias="Reservation"       type="com.example.projectupdate.entity.Reservation"/>
+      <typeAlias alias="Common"       type="com.example.projectupdate.entity.Common"/>
+      <typeAlias alias="Warning"       type="com.example.projectupdate.entity.Warning"/>
+      <typeAlias alias="Notice"				type="com.example.projectupdate.entity.Notice"/>
+      <typeAlias alias="QList"				type="com.example.projectupdate.entity.QList"/>
+      <typeAlias alias="AdminNotice"		type="com.example.projectupdate.entity.AdminNotice"/>
+      <typeAlias alias="AdminQList"			type="com.example.projectupdate.entity.AdminQList"/>
+      <typeAlias alias="List11"				type="com.example.projectupdate.entity.List11"/>
+      <typeAlias alias="AdminList11"		type="com.example.projectupdate.entity.AdminList11"/>
+
+
+      
+   </typeAliases>
+</configuration>
