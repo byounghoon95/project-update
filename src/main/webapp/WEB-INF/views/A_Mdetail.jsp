@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 
 <title>Member Detail</title></head>
-<link href="css/boardDetail.css" rel="stylesheet" />
+<link href="${pageContext.request.contextPath}/css/boardDetail.css" rel="stylesheet" />
 <body>
 <div id="blank"></div>
 <div class="container">

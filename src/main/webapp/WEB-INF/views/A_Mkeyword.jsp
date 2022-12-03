@@ -5,8 +5,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link href="css/Amain.css" rel="stylesheet">
-<link href="css/boardDetail.css" rel="stylesheet" />
+<link href="${pageContext.request.contextPath}/css/Amain.css" rel="stylesheet">
+<link href="${pageContext.request.contextPath}/css/boardDetail.css" rel="stylesheet" />
 <title>Insert title here</title>
 <script type="text/javascript"
    src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

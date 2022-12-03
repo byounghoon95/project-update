@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 import com.example.projectupdate.entity.Board;
 import com.example.projectupdate.entity.Common;
 import com.example.projectupdate.entity.Item;
-import com.example.projectupdate.entity.Member;
+import com.example.projectupdate.entity.MemberEntity;
 import com.example.projectupdate.entity.Reservation;
 
 @Repository
@@ -19,9 +19,9 @@ public class MypageRepositoryImpl implements MypageRepository {
 	private SqlSession session;
 
 	@Override
-	public Member memberMypage(Member member) {
+	public MemberEntity memberMypage(MemberEntity member) {
 		System.out.println("MypageRepositoryImpl memberMypage Start...");
-		Member locname = null;
+		MemberEntity locname = null;
 		System.out.println("MypageRepositoryImpl memberMypage id-> "+member.getId());
 		try {
 			member = session.selectOne("khjMemberMypage", member);
@@ -146,12 +146,10 @@ public class MypageRepositoryImpl implements MypageRepository {
 
 
 	@Override
-	public int mypagePrfUpdate(Member member) {
+	public int mypagePrfUpdate(MemberEntity member) {
 		System.out.println("MypageRepositoryImpl mypagePrfUpdate Start...");
 		int result = 0;
 		try {
-			System.out.println("MypageRepositoryImpl mypagePrfUpdate id -> " + member.getId());
-			System.out.println("업데이트 되는 사진 ->" + member.getUserImg());
 			result = session.update("khjmypagePrfUpdate", member);
 		}catch (Exception e) {
 			System.out.println("MypageRepositoryImpl mypagePrfUpdate Exception -> " + e.getMessage());
@@ -189,10 +187,10 @@ public class MypageRepositoryImpl implements MypageRepository {
 
 
 	@Override
-	public Member memberMypage(String id) {
+	public MemberEntity memberMypage(String id) {
 		System.out.println("MypageRepositoryImpl memberMypage Start...");
-		Member member = null;
-		Member locname = null;
+		MemberEntity member = null;
+		MemberEntity locname = null;
 		System.out.println("MypageRepositoryImpl memberMypage id-> "+id);
 		try {
 			member = session.selectOne("khjMemberMypageOther", id);

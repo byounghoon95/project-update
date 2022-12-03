@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import com.example.projectupdate.entity.Board;
 import com.example.projectupdate.entity.Common;
 import com.example.projectupdate.entity.Item;
-import com.example.projectupdate.entity.Member;
+import com.example.projectupdate.entity.MemberEntity;
 import com.example.projectupdate.entity.Reservation;
 import com.example.projectupdate.khj.repository.MypageRepository;
 
@@ -22,7 +22,7 @@ public class MypageServiceImpl implements MypageService {
 	}
 
 	@Override
-	public Member memberMypage(Member member) {
+	public MemberEntity memberMypage(MemberEntity member) {
 		System.out.println("MypageServiceImpl memberMypage Start...");
 		member = mypageRepository.memberMypage(member);
 		return member;
@@ -94,7 +94,7 @@ public class MypageServiceImpl implements MypageService {
 	}
 
 	@Override
-	public int mypagePrfUpdate(Member member) {
+	public int mypagePrfUpdate(MemberEntity member) {
 		System.out.println("MypageServiceImpl mypagePrfUpdate Start...");
 		int result = 0;
 		result = mypageRepository.mypagePrfUpdate(member);
@@ -117,9 +117,9 @@ public class MypageServiceImpl implements MypageService {
 	}
 
 	@Override
-	public Member memberMypage(String id) {
+	public MemberEntity memberMypage(String id) {
 		System.out.println("MypageServiceImpl memberMypage Start...");
-		Member member = null;
+		MemberEntity member = null;
 		member = mypageRepository.memberMypage(id);
 		return member;
 	}

@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.example.projectupdate.entity.Board;
-import com.example.projectupdate.entity.Member;
+import com.example.projectupdate.entity.MemberEntity;
 import com.example.projectupdate.entity.Warning;
 import com.example.projectupdate.lbh.service.BoardService;
 import com.example.projectupdate.lbh.service.Paging;
@@ -26,7 +26,7 @@ public class BoardController {
 
 	// Board 전체 리스트 불러오기
 	   @GetMapping("/board")
-	   public String board(Board board,String currentPage, Model model, HttpServletRequest request, Member member) {
+	   public String board(Board board,String currentPage, Model model, HttpServletRequest request, MemberEntity member) {
 	      System.out.println("BoardController board Start...");
 	      
 	      // 세션에서 id 가져오기

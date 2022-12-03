@@ -24,7 +24,7 @@
      <footer class="py-5">
       <div class="container">
         <div class="footer-area">
-          <img src="images/logo.png" class="logo" id="logo-f" />
+          <img src="${pageContext.request.contextPath}/images/logo.png" class="logo" id="logo-f" />
           <div class="footer1">
             <div><a class="footer_a" href="footer_notice">공지사항</a></div>
             <div><a class="footer_a" href="footer_qlist">자주 묻는 질문</a></div>
@@ -52,6 +52,6 @@
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
+    <script src="${pageContext.request.contextPath}/js/scripts.js"></script>
   </body>
 </html>

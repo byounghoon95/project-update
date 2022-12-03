@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link href="css/adminNoticeWriteForm.css" rel="stylesheet" />
+<link href="${pageContext.request.contextPath}/css/adminNoticeWriteForm.css" rel="stylesheet" />
 <title>Insert title here</title>
 </head>
 <body>

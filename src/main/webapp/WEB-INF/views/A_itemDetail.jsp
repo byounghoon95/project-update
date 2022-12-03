@@ -9,7 +9,7 @@
 <meta charset="UTF-8">
 
 
-<link href="css/itemDetail.css" rel="stylesheet">
+<link href="${pageContext.request.contextPath}/css/itemDetail.css" rel="stylesheet">
 <title>Cheese Market</title>
 </head>
 <%

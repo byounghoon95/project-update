@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link href="css/Amain.css?12122" rel="stylesheet">
+<link href="${pageContext.request.contextPath}/css/Amain.css?12122" rel="stylesheet">
 <title>Insert title here</title>
 <script src="https://kit.fontawesome.com/2c827c8cca.js"
 	crossorigin="anonymous"></script>

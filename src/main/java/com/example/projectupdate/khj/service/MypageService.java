@@ -5,12 +5,12 @@ import java.util.List;
 import com.example.projectupdate.entity.Board;
 import com.example.projectupdate.entity.Common;
 import com.example.projectupdate.entity.Item;
-import com.example.projectupdate.entity.Member;
+import com.example.projectupdate.entity.MemberEntity;
 import com.example.projectupdate.entity.Reservation;
 
 public interface MypageService {
 
-	Member memberMypage(Member member);
+	MemberEntity memberMypage(MemberEntity member);
 	String memberLocNameSelect(String id);
 	List<Board> mypageBoardSelect(Board board);
 	List<Item> mypageWishList(Item item);
@@ -18,10 +18,10 @@ public interface MypageService {
 	List<Item> mypageSellList(Item item);
 	int totalSellCount(Item item);
 	int totalSellCost(Item item);
-	int mypagePrfUpdate(Member member);
+	int mypagePrfUpdate(MemberEntity member);
 	List<Reservation> mypageCommentSelect(Reservation reservation);
 	List<Common> selectLocList();
-	Member memberMypage(String id);
+	MemberEntity memberMypage(String id);
 	List<Item> mypageOtherSellList(Item item);
 	List<Item> mypageSellList2(Item item);
 

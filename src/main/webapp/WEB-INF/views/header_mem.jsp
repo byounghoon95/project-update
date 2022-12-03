@@ -3,56 +3,41 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <!DOCTYPE html>
-
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <!-- Font Awesome icons (free version)-->
-    <script
-      src="https://use.fontawesome.com/releases/v6.1.0/js/all.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Google fonts-->
-    <link
-      href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i"
-      rel="stylesheet"
-    />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/hfmem_before.css" rel="stylesheet" />
-    <link href="css/hfmem_after.css" rel="stylesheet" />
-
-	<script type="text/javascript"
-		src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script type="text/javascript">
-	$(function() {
-		$('#button-addon2').click(function() {
-			var keyword =  $('#keyword').val();
-			if (!keyword) {
-				alert("검색어를 입력하세요")
-				return false;
-			}
-			var sendData = 'keyword='+keyword + '&Gubun=1';
-			/* alert('sendData-->'+sendData) */
-			location.href="searchList?"+sendData;
-		});
-	});
-	</script>
+<head>
+<meta charset="UTF-8" />
+<link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+<!-- Font Awesome icons (free version)-->
+<script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+<!-- Google fonts-->
+<link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+<!-- Core theme CSS (includes Bootstrap)-->
+<link href="${pageContext.request.contextPath}/css/background_mem.css" rel="stylesheet" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(function() {
+    $('#button-addon2').click(function() {
+        var keyword =  $('#keyword').val();
+        if (!keyword) {
+            alert("검색어를 입력하세요")
+            return false;
+        }
+        var sendData = 'keyword='+keyword + '&Gubun=1';
+        /* alert('sendData-->'+sendData) */
+        location.href="searchList?"+sendData;
+    });
+});
+</script>
 
     <title>Cheese Market</title>
   </head>
   <body id="page-top">
     <!-- Navigation-->
     <div class="fixed-top1">
-    <div class="container d-flex flex-row justify-content-end welcome">
-      <i class="fa-regular fa-bell"></i
-      ><span id="welcome">${nickname }님 환영합니다!</span
-      ><a id="logout" href="/logout">Logout</a>
-    </div>
+      <div class="container d-flex flex-row justify-content-end welcome">
+        <i class="fa-regular fa-bell"></i><span id="welcome">${nickname }님 환영합니다!</span><a id="logout" href="/logout">Logout</a>
+      </div>
     </div>
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
       <div class="container px-5">
@@ -99,6 +84,5 @@
       </div>
     </nav>
     <div id="blank"></div>
-    
   </body>
 </html>

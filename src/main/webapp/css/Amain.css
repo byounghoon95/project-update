@@ -3,7 +3,6 @@
 }
 
 /* 프로필 영역 */
-
 .mypage_all{
    margin-top: 50px;
    width: 60%;
@@ -46,7 +45,6 @@
 }
 
 /* 프사 */
-
 .profile_img{
    margin: 20px;
    width: 200px;
@@ -63,7 +61,6 @@
 
 
 /* 버튼 */
-
 .btn_prf{
    color: white;
    margin-left: 65px;

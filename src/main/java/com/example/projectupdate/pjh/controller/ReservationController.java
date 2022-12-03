@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import com.example.projectupdate.entity.Item;
-import com.example.projectupdate.entity.Member;
+import com.example.projectupdate.entity.MemberEntity;
 import com.example.projectupdate.entity.Reservation;
 import com.example.projectupdate.pjh.service.ReservationService;
 
@@ -154,7 +154,7 @@ public class ReservationController {
 	
 		//후기 update
 		@GetMapping(value="dealCommentForm")
-		public String dealCommentForm(Reservation reser, Model model, Item item,Member member ,HttpServletRequest request) {
+		public String dealCommentForm(Reservation reser, Model model, Item item, MemberEntity member , HttpServletRequest request) {
 			System.out.println("ReservationControlloer dealCommentForm Start..");
 			String id = null;
 			String nickname = null;

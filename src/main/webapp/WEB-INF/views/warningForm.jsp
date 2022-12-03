@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link href="css/itemRegForm.css" rel="stylesheet">
+<link href="${pageContext.request.contextPath}/itemRegForm.css" rel="stylesheet">
 <title>Cheese Market</title>
 
 </head>

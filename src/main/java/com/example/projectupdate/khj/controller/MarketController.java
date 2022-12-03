@@ -6,15 +6,13 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 import com.example.projectupdate.entity.Item;
-import com.example.projectupdate.entity.Member;
+import com.example.projectupdate.entity.MemberEntity;
 import com.example.projectupdate.khj.service.MarketService;
 import com.example.projectupdate.khj.service.Paging;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-
-
 
 @Controller
 public class MarketController {
@@ -23,7 +21,7 @@ public class MarketController {
 	private MarketService ms;
 	
 	@GetMapping("/market")
-	public String market(Model model, String currentPage, Item item, HttpServletRequest request, Member member) {
+	public String market(Model model, String currentPage, Item item, HttpServletRequest request, MemberEntity member) {
 		System.out.println("MarketController mypageWish Start...");
 //		item.setId("kanghj");
 		
@@ -74,18 +72,18 @@ public class MarketController {
 		return "footer_personalInfo";
 	}
 	
-	@GetMapping("/main")
-	public String main(HttpServletRequest request, Member member, Model model) {
-		System.out.println("MarketController main start..");
+//	@GetMapping("/main")
+//	public String main(HttpServletRequest request, Model model) {
+//		System.out.println("MarketController main start..");
+//
+//		// 세션에서 id 가져오기
+//		HttpSession session = request.getSession();
+//		String id = (String) session.getAttribute("id");
+//		session.setAttribute("id", id);
+//		model.addAttribute("id", id);
 		
-		// 세션에서 id 가져오기
-		HttpSession session = request.getSession();
-		String id = (String) session.getAttribute("id");
-		session.setAttribute("id", id);
-		model.addAttribute("id", id);
-		
-		return "main";
-	}
+//		return "main";
+//	}
 	
 //	@GetMapping("/main")
 //	public String main(HttpServletRequest request, Member member, Model model) {

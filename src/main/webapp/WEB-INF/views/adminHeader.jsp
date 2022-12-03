@@ -22,22 +22,22 @@
       rel="stylesheet"
     />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/adnotice_before.css" rel="stylesheet" />
-    <link href="css/adnotice_after.css?after" rel="stylesheet" />
-    <link href="css/AHeader.css" rel="stylesheet" />
+    <link href="${pageContext.request.contextPath}/css/adnotice_before.css" rel="stylesheet" />
+    <link href="${pageContext.request.contextPath}/css/adnotice_after.css" rel="stylesheet" />
+    <link href="${pageContext.request.contextPath}/css/AHeader.css" rel="stylesheet" />
 	 
     <title>Insert title here</title>
   </head>
   <body id="page-top">
     <!-- Navigation-->
     <div class="container d-flex flex-row justify-content-end welcome">
-      <i class="fa-regular fa-bell"></i
-      ><span id="welcome">관리자님 환영합니다!</span
-      ><a id="logout" href="/logout">Logout</a>
+      <i class="fa-regular fa-bell"></i>
+        <span id="welcome">관리자님 환영합니다!</span>
+        <a id="logout" href="/logout">Logout</a>
     </div>
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
       <div class="container px-5">
-        <a href="/adminMain"><img src="images/admin_logo.png"  id="logo" /></a>
+        <a href="/admin/main"><img src="${pageContext.request.contextPath}/images/admin_logo.png"  id="logo" /></a>
      
         <button
           class="navbar-toggler"
@@ -52,17 +52,16 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ms-auto">
-         <li class="nav-item">	
-              <a class="nav-link" href="/A_Mlist" id="new">회원관리</a></li>
+            <li class="nav-item"><a class="nav-link" href="/A_Mlist" id="new">회원관리</a></li>
             <li class="nav-item nav-link">|</li>
             <li class="nav-item"><a class="nav-link" href="adminCatList">카테고리관리</a></li>
-             <li class="nav-item nav-link">|</li>
+            <li class="nav-item nav-link">|</li>
             <li class="nav-item"><a class="nav-link" href="adminWarList">신고관리</a></li>
-             <li class="nav-item nav-link">|</li>
+            <li class="nav-item nav-link">|</li>
             <li class="nav-item"><a class="nav-link" href="adminNotice">공지사항관리</a></li>
-             <li class="nav-item nav-link">|</li>
+            <li class="nav-item nav-link">|</li>
             <li class="nav-item"><a class="nav-link" href="adminList11">1:1문의</a></li>
-             <li class="nav-item nav-link">|</li>
+            <li class="nav-item nav-link">|</li>
             <li class="nav-item"><a class="nav-link" href="adminQList">자주묻는질문</a></li>
           </ul>
         </div>

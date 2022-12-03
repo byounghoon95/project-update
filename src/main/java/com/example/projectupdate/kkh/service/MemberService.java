@@ -3,14 +3,14 @@ package com.example.projectupdate.kkh.service;
 import java.util.List;
 
 import com.example.projectupdate.entity.Common;
-import com.example.projectupdate.entity.Member;
+import com.example.projectupdate.entity.MemberEntity;
 
 public interface MemberService {
-	Member memberLogin(String id);
-	int register(Member member);
-	int idCheck(Member member);
+	MemberEntity memberLogin(String id);
+	int register(MemberEntity member);
+	int idCheck(MemberEntity member);
 	List<Common> selectLocList();
-	Member memberSelect(Member member);
+	MemberEntity memberSelect(MemberEntity member);
 //	Member adminChk(String id);
 	
 }

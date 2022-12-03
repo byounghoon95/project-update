@@ -38,7 +38,7 @@
     </div>
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
       <div class="container px-5">
-        <a href="/adminMain"><img src="images/A_logo.png"  id="logo" /></a>
+        <a href="/admin/main"><img src="images/A_logo.png"  id="logo" /></a>
      
         <button
           class="navbar-toggler"

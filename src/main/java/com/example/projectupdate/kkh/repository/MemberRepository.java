@@ -3,18 +3,18 @@ package com.example.projectupdate.kkh.repository;
 import java.util.List;
 
 import com.example.projectupdate.entity.Common;
-import com.example.projectupdate.entity.Member;
+import com.example.projectupdate.entity.MemberEntity;
 
 public interface MemberRepository {
-	Member memberLogin(String id);
+	MemberEntity memberLogin(String id);
 
-	int register(Member member);
+	int register(MemberEntity member);
 
-	int idCheck(Member member);
+	int idCheck(MemberEntity member);
 
 	List<Common> selectLocList();
 
-	Member memberSelect(Member member);
+	MemberEntity memberSelect(MemberEntity member);
 
 //	Member adminLogin(String id);
 	

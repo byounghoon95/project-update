@@ -2,39 +2,24 @@
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
-<%-- <%@ include file="header.jsp"%> --%>
 <!DOCTYPE html>
 <html>
 <head>
-
 <meta charset="UTF-8">
 <title>Cheese Market</title>
 </head>
-
-
 <!-- header -->
-<c:choose>
-<c:when test="${id == null}">
-	<%@ include file="header.jsp"%>
-</c:when>
-<c:otherwise>
-	<%@ include file="header_mem.jsp"%>
-</c:otherwise>
-</c:choose>
-<link href="css/main.css" rel="stylesheet" />
-
-
-
+<%@ include file="../theme/header.jsp"%>
+<%--<link href="${pageContext.request.contextPath}/css/main.css" rel="stylesheet" />--%>
 <body>
-
 	<!-- Content section 1-->
 	<section id="scroll">
 		<div class="container px-5" id="first_body">
 			<div class="row gx-5 align-items-center">
 				<div class="col-lg-6 order-lg-2">
 					<div class="p-5">
-						<img class="img-fluid" src="images/character.png" alt="..."
-							id="character" />
+						<img class="img-fluid" src="${pageContext.request.contextPath}/images/character.png" alt="..."
+							 id="character" />
 					</div>
 				</div>
 				<div class="col-lg-6 order-lg-1">
@@ -60,7 +45,7 @@
 			<div class="row gx-5 align-items-center">
 				<div class="col-lg-6">
 					<div class="p-5">
-						<img class="img-fluid rounded-circle" src="images/cheese.png"
+						<img class="img-fluid rounded-circle" src="${pageContext.request.contextPath}/images/cheese.png"
 							alt="..." />
 					</div>
 				</div>
@@ -78,6 +63,6 @@
 			</div>
 		</div>
 	</section>
-	<%@ include file="footer.jsp"%>
+	<%@ include file="../theme/footer.jsp"%>
 </body>
 </html>

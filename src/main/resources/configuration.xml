@@ -5,7 +5,7 @@
 <configuration>
    <typeAliases>
       <typeAlias alias="Board"       type="com.example.projectupdate.entity.Board"/>
-      <typeAlias alias="Member"       type="com.example.projectupdate.entity.Member"/>
+      <typeAlias alias="Member"       type="com.example.projectupdate.entity.MemberEntity"/>
       <typeAlias alias="Item"       type="com.example.projectupdate.entity.Item"/>
       <typeAlias alias="Reservation"       type="com.example.projectupdate.entity.Reservation"/>
       <typeAlias alias="Common"       type="com.example.projectupdate.entity.Common"/>
@@ -16,8 +16,5 @@
       <typeAlias alias="AdminQList"			type="com.example.projectupdate.entity.AdminQList"/>
       <typeAlias alias="List11"				type="com.example.projectupdate.entity.List11"/>
       <typeAlias alias="AdminList11"		type="com.example.projectupdate.entity.AdminList11"/>
-
-
-      
    </typeAliases>
 </configuration>
