@@ -12,10 +12,11 @@ import javax.validation.constraints.NotNull;
 public class MemberEntity {
 
 	@Builder
-	public MemberEntity(String id, String name, String password, int warningcnt, int bcd, int mcd, String role) {
+	public MemberEntity(String id, String name, String password, String userImg, int warningcnt, int bcd, int mcd, String role) {
 		this.id = id;
 		this.name = name;
 		this.password = password;
+		this.userImg = userImg;
 		this.warningcnt = warningcnt;
 		this.bcd = bcd;
 		this.mcd = mcd;
@@ -29,6 +30,7 @@ public class MemberEntity {
 	private String name;
 	@NotNull
 	private String password;
+	private String userImg;
 	private int warningcnt;
 	private int bcd;
 	private int mcd;
